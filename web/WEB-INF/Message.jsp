@@ -27,31 +27,24 @@
                 <div class="row"> 
                     <div id="accordion" class="col-md-4 mb-2">
                         <div class="card">
-                            <div class="card-header">
-                                <a class="card-link text-danger " data-toggle="collapse" href="#collapseOne" >
+                            <div class="card-header  bg-white lg-white">
+                                <a class="card-link text-danger" data-toggle="collapse" href="#collapseOne" >
                                     Nouveau message 
                                 </a>
                             </div>
                             <div id="collapseOne" class="collapse show" data-parent="#accordion">
                                 <div class="card-body">
-
                                     <div class="mb-3">
-                                        <input class="form-control" type="text" placeholder="A :" aria-label="Disabled input example" >
-                                    </div>
-                                    <div class="mb-3">
-                                        <input class="form-control" type="text" aria-label="objet" placeholder="Objet">
                                         <textarea class="form-control" name="contenu" id="exampleFormControlTextarea1" rows="3" placeholder="Rédiger votre message"></textarea>
                                     </div>
 
                                     <button type="submit" class="btn btn-success ">Envoyer</button>
 
-
-
-
                                 </div>
                             </div>
                         </div>  
                     </div>
+
                 </div>  
             </div>
 
@@ -61,18 +54,18 @@
             <div class="row"> 
                 <div id="accordion" class="col-md-4 mb-2">
                     <div class="card ">
-                        <div class="card-header">
-                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                        <div class="card-header bg-white lg-white ">
+                            <a class="collapsed card-link text-warning " data-toggle="collapse" href="#collapseTwo">
                                 Messages reçues
                             </a>
                         </div>
                         <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                                 <c:forEach items="${message}" var="m">
-                                
-                            <div class="card-body">
-                                 ${m.contenuMessage}    ${m.dateMessage}
-                            </div>
-                                </c:forEach>
+                            <c:forEach items="${message}" var="m">
+
+                                <div class="card-body">
+                                    ${m.contenuMessage}    ${m.dateMessage}
+                                </div>
+                            </c:forEach>
                         </div>
                     </div>
                 </div>
@@ -84,24 +77,31 @@
             <div class="row"> 
                 <div id="accordion" class="col-md-4 mb-2">
                     <div class="card">
-                        <div class="card-header">
+                        <div class="card-header  bg-white lg-white">
                             <input  hidden type="test" name="idperson" value="${comptes.person.id}">
-                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                            <a class="collapsed card-link text-success" data-toggle="collapse" href="#collapseThree">
                                 Messages envoyés
                             </a>
                         </div>
                         <div id="collapseThree" class="collapse" data-parent="#accordion">
                             <c:forEach items="${messages}" var="m">
-                                
-                            <div class="card-body">
-                                 ${m.contenuMessage} ${m.dateMessage}
-                            </div>
-                                </c:forEach>
+
+                                <div class="card-body">
+                                    ${m.contenuMessage} ${m.dateMessage}
+                                </div>
+                            </c:forEach>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    
-</body>
+
+
+        <div class="row">
+<div  class="col-md-5 mb-2"></div>
+            <div  class="col-md-5 mb-2">
+                <img src="img/message.jpg" width ="190px" height="200px" class="card-img-top" alt="Votre Carte bancaire">
+            </div>
+        </div>
+    </body>
 </html>

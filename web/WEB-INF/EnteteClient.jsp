@@ -24,8 +24,9 @@
         <title>Client</title>
     </head>
     <body>
-       
-        <div class="container center mt-2">
+  
+        
+      <div class="container center mt-2">
             <h6 class="titre text-danger">
                 <span class="name">  </span> </h6>
 
@@ -36,20 +37,18 @@
                             <li class="nav-item">
                                 <a class="nav-link active font-weight-bold px-3 px-3" aria-current="page" href="MenuClient">Comptes et cartes</a>
                             </li>
+                            
                             <li class="nav-item">
-                                <a class="nav-link active font-weight-bold px-3" href="Emprunter">Emprunter</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active font-weight-bold px-3" href="Epargner">Epargner</a>
+                                <a class="nav-link active font-weight-bold px-3" href="MesCartes">Mes cartes</a>
                             </li>  
                             <li class="nav-item">
-                                <a class="nav-link active font-weight-bold px-3" href="NosConseil">Nos conseils</a>
+                                <a class="nav-link active font-weight-bold px-3" href="HistoriqueServlet">Historiques</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active font-weight-bold px-3" href="Autres">Autres</a>
-                            </li>
-                        </ul>
-
+                            
+                        </ul> 
+        
+        
+       
 
 
                         <ul class="navbar-nav">

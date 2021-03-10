@@ -10,30 +10,33 @@
     <head>             
         <%@ include file="EnteteClient.jsp"%>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Historique</title>
     </head>
     <body>
-        <div class="container mt-4">
-              <div>
-            <div class="row">
-  <c:forEach items="${historiques}" var="h">
-                <div class="col-md-12">
-                  
-                        <div class="col-sm-4 mt-4">
+        <div class="container mt-2">
+            <div>
+                <div class="row">
+                    <c:forEach items="${historiques}" var="h">
+                        <div class="col-sm-3 mt-4">
                             <div class="card card-perso">
                                 <div class="card-body">
-                                    <!-- <strong class="text-info">Utilisateur : ${h.person.nom}</strong><br> -->
+
                                     <strong class="text-danger">Type d'operation : ${h.typeOperation}</strong><br>
                                     <strong class="text-black">Fais le : ${h.dateOperation}</strong><br>
                                     <strong class="text-success">Montant : ${h.montantOperation}</strong><br>
                                 </div>
                             </div>
                         </div>
+                    </c:forEach>  
+                    <div class="col-sm-12 px-5 mt-4">
 
-                    </c:forEach>      
+                        <img src="img/historique.jpg" alt="Votre Carte bancaire">
+
+                    </div>
+
                 </div>
             </div>
         </div>
-        </div>
-</body>
+
+    </body>
 </html>

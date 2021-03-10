@@ -17,43 +17,17 @@
     </head>
 
     <body>
-        <div class="container center ">
-            <div class="container-fluid">
-                <nav class="navbar navbar-expand-md  navbar-white bg-white">
-                    <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav me-auto ">
-                            <li class="nav-item">
-                                <a class="nav-link active font-weight-bold px-3" aria-current="page" href="MenuClient">Mes comptes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active font-weight-bold px-3" href="MesCartes">Mes cartes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active font-weight-bold px-3" href="HistoriqueServlet">Historiques</a>
-                            </li>  
-
-                            <li class="nav-item">
-                                <a class="nav-link active font-weight-bold px-3" href="MonBudget">Mon budget</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link active font-weight-bold px-3" href="NosOffres"> Nos offres</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav> 
-            </div>
-        </div>  
+    
 
 
-
+        <br><br> <br><br>
         <div class="container center">
             <div class="title-zone mt-2 mb-5 ">
-                <h6>Mes comptes</h6>
-               
+                <h5>Mes comptes</h5>
+
             </div>
             <div class="row">
-                <div class="col-md-7 mb-2">
+                <div class="col-md-5 mb-2">
                     <form>
                         <div class="row">
                             <div class="form-group col-md-6 mb-2">
@@ -71,9 +45,9 @@
                 </div>
 
 
-                <div class="col-md-3 mb-2">
-               
+                <div class="col-md-2 mb-2">
 
+                    <br><br>
                     <label class="my-label" style="color:blue">Etat de  carte</label>
 
                     <div>
@@ -99,13 +73,18 @@
 
                     </div>
 
-                </div>
-                <div class="col-sm-4 mb-">
-                                 
+                </div>           
+
+                <br><br>
+
+                <div class="col-sm-5 mb-">
+                    <br><br>
+                    <br>
+
                     <img src="img/mescartes.jpg"  alt="Votre Carte bancaire">
                 </div>
-
             </div>
+        </div>
 
 
 

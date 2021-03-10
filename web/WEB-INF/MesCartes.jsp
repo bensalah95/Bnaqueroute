@@ -31,7 +31,7 @@
     <body> 
         <form action="AjoutOperation?numcarte=${comptes.numcarte} " method="Post">
             <div class="row">
-                <div class="col-md-8"></div>
+                <div class="col-md-9"></div>
 
                 <div class="col-md-2 mb-3">
                     <br><br>
@@ -174,7 +174,7 @@
 
         <form action="MesCartes?numcarte=${comptes.numcarte}" method="Post">
             <div class="card" style="width: 30rem ;" >
-                <img src="img/carte.jpg" width ="190px" height="200px" class="card-img-top" alt="Votre Carte bancaire">
+                <img src="img/cartes.jpg" width ="190px" height="200px" class="card-img-top" alt="Votre Carte bancaire">
                 <div class="card-body">
                     <h5 class="card-title">Carte Bancaire</h5>
                     <p name="numcarte" class="card-text">${comptes.numcarte}</p>
@@ -187,12 +187,7 @@
                     
                     <h6 class="card-title">Solde Total</h6>
                     <p class="card-text"style="color:blue">${comptes.solde + comptes.montantDecouvert}.00€</p>
-
-
                 </div>
-
-
-
                 <div class="col-md-12 px-2 text-center">
                     <span class="p-redirection" id="redirection">
                         <c:if test="${comptes.opposition == false}">
@@ -210,6 +205,5 @@
             </div>  
         </form>
 
-        <script type="text/javascript" src="app.js"></script>                    
     </body>
 </html>
