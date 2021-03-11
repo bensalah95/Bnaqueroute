@@ -14,64 +14,55 @@
         <title>BanqueRoute</title>
         <link rel="stylesheet" href="css/style.css">
         <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-              integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>    
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script> 
+        <style>
+            .vertical-line{
+                border-right: 2px solid #000;
+                display: inline-block;
+                height: 180px;
+                margin: 0 20px;
+            }</style>
     </head>
 
 
-    <body style="background-color:white;">
-        <div class="argent">
-            <div>
-                <h1><span style="color: red;
-                          text-decoration: underline;
-
-                          text-align: center;
-                          text-shadow: -1px 0 0 rgba(0, 0, 0, 0.8), 
-                          1px 0 0 rgba(0, 0, 0, 0.8),
-                          0 -1px 0 rgba(0, 0, 0, 0.8),
-                          0 1px 0 rgba(0, 0, 0, 0.8);">
-                        BanqueRoute</span>
-                </h1>
-                <p>la banque de la hess</p>
-            </div>
-            <div class="container mt-4 " style="background-color: #fff9ed">
-                <form action="login" method="POST">
-                    <div class="content-login">
-
-                        <h5 class="card-title-perso text-center "><span class="connexion"> Connexion </span></h5>
-                    </div>
-                    <div>
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <label for="login" class="my-label">Login</label>
-                                <input type="text" required id="login" class="form-control" name="login">
-                            </div>
-                            <div class="mb-3">
-                                <label for="login" class="my-label">Password</label>
+    <body>
+        <br><br>
+        <div class="container mt-4 " >
+            <form action="login" method="POST">
+                <br><br><br><br>
+                <div>
+                    <div class="card-body">
+                    
+                        <span class="vertical-line">
+                            
+                            <div class=" col-md-10 mb-3">
+                            <label for="login" class="my-label">Identifiant</label>
+                            <input type="text" required id="login" class="form-control" name="login">
+                        </div>
+                       
+ 
+                            <div class=" col-md-10 mb-3">
+                    
+                                <label for="login" class="my-label">Mot de passe</label>
+                           
                                 <input type="password"  required id="mdp" class="form-control" name="mdp">
                             </div>
-                            <div class="d-grid gap-2">
-                                <button type="submit" class="btn btn-success btn-block">Valider</button>
-                                <button type="button" class="btn btn-primary" onclick="location.href = 'InscriptionClient'">S'inscrire</button>
-                            </div>
+                            <button type="submit" class="btn btn-success">Déjà Membre?</button>
 
-                            <p class="text-center text-danger" id="msg"> ${msg} </p>
-                        </div>
+                        </span>
+
+                        <button type="button" class="btn btn-danger" onclick="location.href = 'InscriptionClient'">Rejoignez nous?</button>
+                       
+                        <p class="text-center text-danger" id="msg"> ${msg} </p>
                     </div>
+                </div>
+            </form>
 
-            </div>
         </div>
-    </form>
-</div>
-</div>
-</body>
+
+    </body>
 
 </html>
