@@ -19,49 +19,71 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script> 
         <style>
-            .vertical-line{
-                border-right: 2px solid #000;
-                display: inline-block;
-                height: 180px;
-                margin: 0 20px;
-            }</style>
+             body {
+                color:black;
+                background-color:white;
+                background-image:url(img/index.jpg);
+                margin:0;
+                background-attachment:fixed;
+                background-repeat:no-repeat;
+                background-position:center center;
+            }
+        </style>
     </head>
 
-
+    <!--   <span class="vertical-line">
+               </span> -->
     <body>
-        <br><br>
-        <div class="container mt-4 " >
-            <form action="login" method="POST">
-                <br><br><br><br>
-                <div>
-                    <div class="card-body">
-                    
-                        <span class="vertical-line">
-                            
-                            <div class=" col-md-10 mb-3">
-                            <label for="login" class="my-label">Identifiant</label>
-                            <input type="text" required id="login" class="form-control" name="login">
-                        </div>
-                       
- 
-                            <div class=" col-md-10 mb-3">
-                    
-                                <label for="login" class="my-label">Mot de passe</label>
-                           
-                                <input type="password"  required id="mdp" class="form-control" name="mdp">
-                            </div>
-                            <button type="submit" class="btn btn-success">Déjà Membre?</button>
+        <br><br>   <br><br>   <br><br>  
 
-                        </span>
+        <form action="login" method="POST">
+            <br><br><br><br>
+
+
+            <div class="row">
+
+                <div class=" col-md-4 mb-3 text-center"></div>
+
+                <div class=" col-md-4 mb-3 text-center">
+                    <label for="login" class="label">IDENTIFIANT</label>                       
+
+                    <input type="text" required id="login" class="form-control" name="login">
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class=" col-md-4 mb-3 text-center"></div>
+                <div class=" col-md-4 mb-3 text-center">
+                    <label for="login" class="label">MOT DE PASSE</label>
+                    <input type="password"  required id="mdp" class="form-control" name="mdp">
+                </div>
+            </div>
+
+
+            <div>
+                <div class="row">
+
+                    <div class=" col-md-4 mb-3 text-center"></div>
+                    <div class=" col-md-4 mb-3 text-center">
+
+
+                        <button type="submit" class="btn btn-success">Déjà Membre?</button>
+
+
 
                         <button type="button" class="btn btn-danger" onclick="location.href = 'InscriptionClient'">Rejoignez nous?</button>
-                       
+
                         <p class="text-center text-danger" id="msg"> ${msg} </p>
                     </div>
                 </div>
-            </form>
+                </div>
 
-        </div>
+
+        </form>
+
+
 
     </body>
 

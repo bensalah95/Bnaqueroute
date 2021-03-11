@@ -15,6 +15,7 @@ and open the template in the editor.
     font-size: large;
     font-weight: 500;
 }
+
 .titre{
     text-align: center;
     color : tomato;
@@ -23,8 +24,8 @@ and open the template in the editor.
 }
 .petit-title{
     color: grey;
-        font-weight: 100;
-    
+    font-weight: 100;
+
 }
 .name {
     font-weight: bold;
@@ -34,6 +35,19 @@ and open the template in the editor.
     text-align: center;
     color : pink;
     letter-spacing: 2px;
+
+}
+.vertical-line{
+    border-right: 2px solid #000;
+    display: inline-block;
+    height: 180px;
+    margin: 0 10px;
+}
+
+.label{
+
+    font-size: larger;
+    font-weight: 1000;
 
 }
 
@@ -95,14 +109,14 @@ a:hover{
 }*/
 
 h1{
-font-family: 'Anton', sans-serif;
-color: red;
-text-align: center;
-text-shadow: -1px 0 0 rgba(0, 0, 0, 0.8), 
-             1px 0 0 rgba(0, 0, 0, 0.8),
-             0 -1px 0 rgba(0, 0, 0, 0.8),
-             0 1px 0 rgba(0, 0, 0, 0.8);
-text-decoration: underline;
+    font-family: 'Anton', sans-serif;
+    color: red;
+    text-align: center;
+    text-shadow: -1px 0 0 rgba(0, 0, 0, 0.8), 
+        1px 0 0 rgba(0, 0, 0, 0.8),
+        0 -1px 0 rgba(0, 0, 0, 0.8),
+        0 1px 0 rgba(0, 0, 0, 0.8);
+    text-decoration: underline;
 }
 
 p{
@@ -120,8 +134,8 @@ body{
 }
 
 .argent{
-  background-image: url("https://image.freepik.com/vecteurs-libre/roupies-indiennes-tombant-fond_23-2148007354.jpg");
-  border-radius:8px;
+    background-image: url("https://image.freepik.com/vecteurs-libre/roupies-indiennes-tombant-fond_23-2148007354.jpg");
+    border-radius:8px;
 }
 
 .my-label{
